@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+        
+        <bean class="com.org.injection.Employee" id="emp">
+	        <constructor-arg name="id" value="10"/>
+	        <constructor-arg name="name" value="Karthik"/>
+	        <!-- <constructor-arg name="age" value="100"/> -->
+	        <constructor-arg name="age">
+	        	<value>200</value>
+	        </constructor-arg>
+        </bean>
+  
+  		<bean class="com.org.injection.Employee" id="emp2">
+  			<property name="id" value="12" />
+  			<property name="name" value="Ramana" />
+  			<property name="age" value="120" />
+  		</bean>
+  		
+  		<bean class="com.org.injection.Employee" id="emp3">
+  			<property name="id" value="12" />
+  			<property name="name" value="Ramana" />
+  			<property name="age" value="120" />
+  			<property name="numbers">
+  				<list>
+  					<value>10</value>
+  					<value>20</value>
+  					<value>30</value>
+  					<value>140</value>
+  					<value>100</value>
+  					<value>109</value>
+  					<value>10</value>
+  				</list>
+  			</property>
+  		</bean>
+  		
+  		<bean class="com.org.injection.Employee" id="emp4">
+  			<property name="addresses" >
+  				<set>
+  					<value>karthik</value>
+  					<value>Ramana</value>
+  					<value>Lavan</value>
+  					<value>Harish</value>
+  					<value>Prasad</value>
+  					<value>Prasad</value>
+  					<value>Prasad</value>
+  				</set>
+  			</property>	
+  		</bean>
+  		<bean class="com.org.injection.Employee" id="emp5">
+  			<property name="map">
+  				<map>
+  					<entry key="7" value="Dhoni"/>
+  					<entry key="18" value="Kohli"/>
+  					<entry key="18" value="Virat Kohli"/>
+  				</map>
+  			</property>
+  		</bean>
+  		
+</beans>
