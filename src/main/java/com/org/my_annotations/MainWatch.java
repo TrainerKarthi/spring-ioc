@@ -12,5 +12,4 @@ public class MainWatch {
 		
 		System.out.println(bean);
 	}
-
 }

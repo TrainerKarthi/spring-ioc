@@ -7,8 +7,11 @@
             http://www.springframework.org/schema/context
             http://www.springframework.org/schema/context/spring-context-3.0.xsd">
         
-        <bean id="person" class="com.org.Person"></bean>
+        <!-- <bean id="person" class="com.org.Person"></bean>
         <bean id="p" class="com.org.Person"></bean>
-        
-  
+         -->
+         
+         <bean id="building" class="com.org.Building" init-method="karthik" destroy-method="ramana">
+         </bean>
+  		
 </beans>

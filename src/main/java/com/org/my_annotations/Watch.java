@@ -7,8 +7,6 @@ public class Watch {
 
 	public Watch() {
 		super();
-		System.out.println("Watch Created");
+//		System.out.println("Watch Created");
 	}
-	
-	
 }
